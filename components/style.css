@@ -1,0 +1,129 @@
+.mainz {
+    place-self: center; 
+    width: 91.666667%; 
+    max-width: 28rem; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 1.75rem; 
+    min-height: 550px; 
+    border-radius: 0.75rem;
+    background-color:rgb(240, 224, 205);
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+form {
+    
+    display: flex; 
+    align-items: center; 
+    margin-top: 28px; 
+    margin-bottom: 28px; 
+    background-color:rgb(176, 176, 176); 
+    border-radius: 9999px; 
+}
+
+form input {
+    background-color: transparent; 
+    border: 0; 
+    outline: none; 
+    flex: 1; 
+    height: 56px; 
+    padding-left: 24px; 
+    padding-right: 8px; 
+}
+
+form button {
+    border: none; 
+    border-radius: 9999px; 
+    background-color: rgb(115, 115, 115); 
+    width: 128px; 
+    height: 56px; 
+    color: rgb(176, 176, 176); 
+    font-size: 1.125rem; 
+    font-weight: 500; 
+    cursor: pointer; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.main input[type=checkbox] {
+    visibility: hidden;
+
+}
+
+.checkbox-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid #000;
+}
+
+/* Checked effect */
+.main input:checked~.checkbox-container {
+    background-color: rgb(55, 142, 55);
+}
+
+/* Checkmark */
+.checkbox-container::after {
+    content: "";
+    position: relative;
+    display: none;
+    left: 5px;
+    /* top: 0px; */
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Display checkmark when checked */
+.main input:checked~.checkbox-container::after {
+    display: block;
+}
+
+.cursor{
+    cursor: pointer
+}
+
+
